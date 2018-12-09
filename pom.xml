@@ -17,18 +17,6 @@
             <version>4.2.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-        <!--<dependency>-->
-            <!--<groupId>io.cucumber</groupId>-->
-            <!--<artifactId>cucumber-testng</artifactId>-->
-            <!--<version>4.2.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.testng</groupId>-->
-            <!--<artifactId>testng</artifactId>-->
-            <!--<version>6.14.3</version>-->
-        <!--</dependency>-->
-
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -49,18 +37,16 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>4.2.0</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -75,44 +61,6 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-surefire-plugin</artifactId>-->
-                <!--<version>2.22.1</version>-->
-
-                <!--<configuration>-->
-                    <!--<properties>-->
-                        <!--<property>-->
-                            <!--<name>parallel</name>-->
-                            <!--<value>classes</value>-->
-                        <!--</property>-->
-                        <!--<property>-->
-                        <!--<name>threadCount</name>-->
-                        <!--<value>1</value>-->
-                        <!--</property>-->
-                        <!--<property>-->
-                            <!--<name>dataproviderthreadcount</name>-->
-                            <!--<value>5</value>-->
-                        <!--</property>-->
-                    <!--</properties>-->
-                    <!--<testSourceDirectory>src/test/java/hook</testSourceDirectory>-->
-
-
-                <!--</configuration>-->
-
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>acceptance-test</id>-->
-                        <!--<phase>integration-test</phase>-->
-                        <!--<goals>-->
-                            <!--&lt;!&ndash;<goal>integration-test</goal>&ndash;&gt;-->
-                            <!--<goal>test</goal>-->
-                        <!--</goals>-->
-
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -126,13 +74,7 @@
                     </execution>
                 </executions>
             </plugin>
-
-
         </plugins>
     </build>
-
-
-
-
 
 </project>
