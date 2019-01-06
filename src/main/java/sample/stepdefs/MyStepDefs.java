@@ -28,7 +28,7 @@ public class MyStepDefs {
         capabilities.setCapability("build", "testBuild3");
         capabilities.setCapability("name", "queue-test");
 
-        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+        WebDriver driver = new RemoteWebDriver(new URL("http://test:test-password@localhost:4444/wd/hub"), capabilities);
 
         driver.get(url);
         driver.quit();
